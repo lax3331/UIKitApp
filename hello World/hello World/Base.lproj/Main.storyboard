@@ -16,34 +16,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y48-Th-PlE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y48-Th-PlE">
                                 <rect key="frame" x="80.5" y="55" width="214" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDI-Kp-gkh">
-                                <rect key="frame" x="99.5" y="541.5" width="176" height="47.5"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <color key="tintColor" systemColor="systemGray5Color"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Push Button">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="83Q-Em-SRN"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lbY-Iv-pfe">
+                                <rect key="frame" x="99" y="404" width="176" height="182.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rV-Vr-gHX">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="47.5"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Push Button">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bo-pW-Alk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcU-wk-93A">
+                                        <rect key="frame" x="0.0" y="67.5" width="176" height="47.5"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Push Button">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYw-zZ-Dp8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDI-Kp-gkh">
+                                        <rect key="frame" x="0.0" y="135" width="176" height="47.5"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Push Button">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="83Q-Em-SRN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kDI-Kp-gkh" secondAttribute="bottom" constant="78" id="9xB-He-fUu"/>
                             <constraint firstItem="Y48-Th-PlE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="Qsg-KP-ZmN"/>
-                            <constraint firstItem="kDI-Kp-gkh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YkX-BS-rka"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Y48-Th-PlE" secondAttribute="trailing" id="a3n-1n-ub6"/>
                             <constraint firstItem="Y48-Th-PlE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="aok-3F-JvS"/>
-                            <constraint firstItem="Y48-Th-PlE" firstAttribute="centerX" secondItem="kDI-Kp-gkh" secondAttribute="centerX" id="hKF-1r-s2q"/>
                             <constraint firstItem="Y48-Th-PlE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x3M-mt-AUk"/>
                             <constraint firstItem="Y48-Th-PlE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zId-Gu-25U"/>
                         </constraints>
