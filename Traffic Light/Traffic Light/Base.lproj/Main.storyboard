@@ -31,9 +31,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="ksC-rs-Y4h">
                                 <rect key="frame" x="142.66666666666666" y="63" width="90" height="330"/>
                                 <subviews>
-                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afF-fB-NMc">
+                                    <view userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afF-fB-NMc">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="89"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="1iF-PM-f50"/>
                                         </constraints>
@@ -72,7 +72,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="startButton" destination="V8k-Nx-cbO" id="0gM-Tk-j0U"/>
+                        <outlet property="actionButton" destination="V8k-Nx-cbO" id="z0C-aS-8He"/>
+                        <outlet property="greenLight" destination="oDe-gh-3qV" id="dk3-Ws-f7F"/>
+                        <outlet property="redLight" destination="afF-fB-NMc" id="F2h-2w-wlS"/>
+                        <outlet property="yellowLight" destination="AXH-Se-zI7" id="YOM-zf-axD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -90,8 +93,8 @@
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
