@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-Rn-4mN">
-                                <rect key="frame" x="100" y="424" width="214" height="48"/>
+                                <rect key="frame" x="74" y="424" width="266" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="66Q-St-z8N"/>
-                                    <constraint firstAttribute="width" constant="214" id="SXn-TJ-mMA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="SXn-TJ-mMA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
@@ -30,8 +30,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="4Oc-Rn-4mN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ase-dq-w4T"/>
-                            <constraint firstItem="4Oc-Rn-4mN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a92-V6-JmM"/>
+                            <constraint firstItem="4Oc-Rn-4mN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8BO-O8-Hqf"/>
+                            <constraint firstItem="4Oc-Rn-4mN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JAr-cA-xie"/>
                         </constraints>
                     </view>
                 </viewController>
